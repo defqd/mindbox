@@ -6,10 +6,10 @@ namespace Geometry.Tests
     public class CircleTests
     {
         /// <summary>
-        /// Тест вычисления площади круга
+        /// РўРµСЃС‚ РІС‹С‡РёСЃР»РµРЅРёСЏ РїР»РѕС‰Р°РґРё РєСЂСѓРіР°
         /// </summary>
-        /// <param name="radius">Радиус круга</param>
-        /// <param name="expected">Ожидаемое значение</param>
+        /// <param name="radius">Р Р°РґРёСѓСЃ РєСЂСѓРіР°</param>
+        /// <param name="expected">РћР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ</param>
         [TestCase(1, Math.PI)]
         [TestCase(20, 1256.6370614359173d)]
         public void CircleSquareTest(double radius, double expected)
@@ -18,9 +18,9 @@ namespace Geometry.Tests
         }
 
         /// <summary>
-        /// Тест на радиус равный 0 или отрицательному значению
+        /// РўРµСЃС‚ РЅР° СЂР°РґРёСѓСЃ СЂР°РІРЅС‹Р№ 0 РёР»Рё РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ
         /// </summary>
-        /// <param name="radius">Радиус круга</param>
+        /// <param name="radius">Р Р°РґРёСѓСЃ РєСЂСѓРіР°</param>
         [TestCase(0)]
         [TestCase(-1)]
         public void CircleIncorrectRadiusTest(double radius)
