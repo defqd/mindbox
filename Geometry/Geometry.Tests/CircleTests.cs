@@ -9,7 +9,11 @@ namespace Geometry.Tests
         [TestCase(20, 1256.6370614359173d)]
         public void CircleAreaTest(double radius, double expected)
         {
-            Assert.That(new Circle(radius).Area(), Is.EqualTo(expected));
+            var circle = new Circle(radius);
+
+            double result = circle.Area();
+
+            Assert.That(result, Is.EqualTo(expected));
         }
 
         [TestCase(0), Description("Тест на радиус равный 0 или отрицательному значению")]
